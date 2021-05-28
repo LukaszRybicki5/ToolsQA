@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 First approach to write test case for portfolio and to improve my coding/testing skills
  */
 public class LoginTest {
-
+/*
     @BeforeClass
     public static void beforeTestsSettings(){
         System.out.println("Start");
@@ -56,5 +56,5 @@ public class LoginTest {
         System.out.println("End");
 
     }
-
+*/
 }

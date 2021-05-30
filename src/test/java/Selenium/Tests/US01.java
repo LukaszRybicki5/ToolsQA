@@ -1,7 +1,7 @@
-package Tests;
+package Selenium.Tests;
 
-import Pages.*;
-import Settings.FunctionalTest;
+import Selenium.Pages.*;
+import Selenium.Settings.FunctionalTest;
 import org.junit.Test;
 
 import java.awt.*;

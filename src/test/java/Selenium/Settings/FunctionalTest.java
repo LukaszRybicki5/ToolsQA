@@ -1,4 +1,4 @@
-package Settings;
+package Selenium.Settings;
 
 import org.junit.After;
 import org.junit.AfterClass;

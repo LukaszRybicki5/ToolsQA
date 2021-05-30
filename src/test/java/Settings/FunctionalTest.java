@@ -1,4 +1,4 @@
-package Pages;
+package Settings;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -17,16 +17,20 @@ public class FunctionalTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @After
-    public void cleanUp() throws InterruptedException {
-        driver.manage().deleteAllCookies();
+    public void cleanUp() {
+        //driver.manage().deleteAllCookies();
     }
 
     @AfterClass
     public static void tearDown(){
+        driver.manage().deleteAllCookies();
+        driver.close();
         driver.close();
     }
+
+
 }

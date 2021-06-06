@@ -22,9 +22,6 @@ public class US01 extends FunctionalTest {
     }
 
     public void logInTest(){
-
-        driver.get("https://demoqa.com/login");
-
         String correctUsername = "LukaszRybicki5";
         String correctPassword = "Lukasz2021!";
 
@@ -61,10 +58,10 @@ public class US01 extends FunctionalTest {
 
         homePage.clickGoToProfile();
 
-        Profile profile = new Profile(driver);
-        assertTrue(profile.isInitialized());
+        ProfilePage profilePage = new ProfilePage(driver);
+        assertTrue(profilePage.isInitialized());
 
-        profile.deleteRecord();
+        profilePage.deleteRecord();
 
     }
 

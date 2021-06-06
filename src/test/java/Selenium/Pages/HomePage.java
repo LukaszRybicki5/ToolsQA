@@ -58,6 +58,7 @@ public class HomePage extends PageObject {
         sleep(1000);
 
         robot.keyPress(KeyEvent.VK_DOWN);
+        robot.keyRelease(KeyEvent.VK_DOWN);
 
         if (goToProfile.isEnabled()){
             goToProfile.click();

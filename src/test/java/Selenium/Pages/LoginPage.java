@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends PageObject {
 
+    private String pageAddress = "https://demoqa.com/login";
+
     @FindBy(id="userName")
     WebElement usernameInput;
 
@@ -18,6 +20,7 @@ public class LoginPage extends PageObject {
 
     public LoginPage(WebDriver driver){
         super(driver);
+        driver.get(pageAddress);
     }
 
     public boolean isInitialized() {
